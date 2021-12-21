@@ -1,0 +1,53 @@
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #201B18;
+        flex-direction: column;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+
+        // background-color: #423C3C;
+        button {
+            width: 100% !important;
+            height: 100%;
+            background-color: #423C3C;
+        }
+    }
+
+    .score {
+        position: fixed;
+        top: 30px;
+        left: 50px;
+        color: white;
+        font-size: 50px;
+    }
+
+    #start{
+        position: fixed;
+        top: 30px;
+        right: 50px;
+        button{
+            padding: 8px 16px;
+        }
+
+    }
