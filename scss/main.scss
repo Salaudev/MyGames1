@@ -1,0 +1,75 @@
+body{
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+}
+
+.board{
+    height: 400px;
+    border-top: 10px solid rgba(255, 166, 0, 0.6);
+    border-bottom: 10px solid rgba(255, 166, 0, 0.6);
+    .scoreTitle{
+        position: relative;
+        z-index: 1000;
+    }
+
+    .line{
+        height: 10px;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+}
+
+.btm{
+     height: 300px;
+    .btn{
+        padding: 10px;
+        height: 90px !important;
+        width:90px ;
+        border-radius: 50%;
+        outline: none !important;
+        border : none !important;      
+        i{
+            color: white;
+            font-size: 40px;
+        }
+    }
+
+}
+
+#refresh {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    outline: none !important;
+    border: none !important;
+    transition: 0.4s;
+    animation-name: anime;
+    animation-duration: 1s;
+    i{
+        font-size: 70px;
+        color: white;
+    }
+
+    table{
+        width: 60%;
+        margin: 0 auto;
+        background-color: papayawhip;
+        color: black;
+        text-align: center;
+    }
+}
+
+@keyframes anime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
